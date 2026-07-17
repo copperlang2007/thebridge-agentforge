@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [{ "src": "src/index.ts", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "src/index.ts" }],
+  "env": {
+    "NEON_DATABASE_URL": "@neon_database_url",
+    "OPENAI_API_KEY": "@openai_api_key"
+  }
+}
